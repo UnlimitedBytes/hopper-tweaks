@@ -1,0 +1,31 @@
+{
+	"schemaVersion": 1,
+	"id": "hoppertweaks",
+	"version": "${version}",
+	"name": "Hopper Tweaks",
+	"description": "Configurable per-world hopper transfer amount with Carpet TIS Addition compatibility.",
+	"authors": [
+		"unlimitedbytes"
+	],
+	"license": "MIT",
+	"environment": "*",
+	"icon": "assets/hoppertweaks/icon.png",
+	"entrypoints": {
+		"main": [
+			"de.unlimitedbytes.hoppertweaks.HopperTweaks"
+		],
+		"modmenu": [
+			"de.unlimitedbytes.hoppertweaks.gui.ModMenuIntegration"
+		]
+	},
+	"mixins": [
+		"hoppertweaks.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.19.3",
+		"minecraft": "~1.21.11",
+		"java": ">=21",
+		"fabric-api": "*",
+		"cloth-config": "*"
+	}
+}

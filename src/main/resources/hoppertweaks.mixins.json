@@ -1,0 +1,12 @@
+{
+	"required": true,
+	"package": "de.unlimitedbytes.hoppertweaks.mixin",
+	"compatibilityLevel": "JAVA_21",
+	"mixins": [
+		"HopperBlockEntityMixin",
+		"MinecraftServerAccessor"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}
