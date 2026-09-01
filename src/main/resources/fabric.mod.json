@@ -27,5 +27,10 @@
 		"java": ">=25",
 		"fabric-api": "*",
 		"cloth-config": "*"
+	},
+	"custom": {
+		"lithium:options": {
+			"mixin.block.hopper": false
+		}
 	}
 }
