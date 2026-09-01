@@ -65,11 +65,13 @@ Artifacts are suffixed accordingly, e.g. `hopper-tweaks-1.0.0+mc26.2.jar`.
   screen)
 - Optional: [Mod Menu](https://modrinth.com/mod/modmenu) for the config button
 
-Note: if [lithium](https://modrinth.com/mod/lithium) is installed, its hopper
-optimization must be disabled for this mod to take effect
-(`mixin.block.hopper = false` in `config/lithium.properties`). Lithium
-replaces the vanilla transfer code that this mod modifies; every other
-lithium optimization stays active.
+Note: if [lithium](https://modrinth.com/mod/lithium) is installed, this mod
+automatically disables lithium's hopper optimization through lithium's
+official mod-override mechanism (`lithium:options` in `fabric.mod.json`) —
+fresh installs work without any manual configuration. Lithium replaces the
+vanilla transfer code that this mod modifies; every other lithium
+optimization stays active. If you manually set `mixin.block.hopper = true`
+in lithium's config, your explicit choice wins.
 
 ## Building
 
